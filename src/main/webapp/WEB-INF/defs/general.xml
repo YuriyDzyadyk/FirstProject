@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+				<!-- Some templates -->
+	<definition name="common" template="/WEB-INF/layout/classic.jsp">
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+
+	<definition name="index" extends="common">
+		<put-attribute name="title" value="Company Name" />
+		<put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+	</definition>
+		<definition name="contact" extends="common">
+		<put-attribute name="body" value="/WEB-INF/jsp/contact.jsp"></put-attribute> <!-- value="" - шлях до файлу -->
+		<put-attribute name="title" value="contacts"></put-attribute> <!-- value="" -це те що появляэться в шапці сторінки -->
+	</definition>
+	<definition name="about" extends="common">
+		<put-attribute name="body" value="/WEB-INF/jsp/about.jsp"></put-attribute><!-- value="" - шлях до файлу -->
+		<put-attribute name="title" value="about us"></put-attribute> <!-- value="" -це те що появляэться в шапці сторінки -->
+	</definition>
+	<definition name="services" extends="common">
+		<put-attribute name="body" value="/WEB-INF/jsp/services.jsp"></put-attribute> <!-- value="" - шлях до файлу -->
+		<put-attribute name="title" value="services and prices"></put-attribute> <!-- value="" -це те що появляэться в шапці сторінки -->
+	</definition>
+	<definition name="sitemap" extends="common">
+		<put-attribute name="body" value="/WEB-INF/jsp/sitemap.jsp"></put-attribute> <!-- value="" - шлях до файлу -->
+		<put-attribute name="title" value="administrative"></put-attribute> <!-- value="" -це те що появляэться в шапці сторінки -->
+	</definition>
+	<definition name="passTransp" extends="common">
+		<put-attribute name="body" value="/WEB-INF/jsp/services/passTransp.jsp"></put-attribute> <!-- value="" - шлях до файлу -->
+		<put-attribute name="title" value="Passenger Transportation"></put-attribute> <!-- value="" - це те що появляэться в шапці сторінки -->
+	</definition>
+	<definition name="freigTransp" extends="common">
+		<put-attribute name="body" value="/WEB-INF/jsp/services/freigTransp.jsp"></put-attribute>
+		<put-attribute name="title" value="Freight Transportation"></put-attribute>
+	</definition>
+	<definition name="cargoIns" extends="common">
+		<put-attribute name="body" value="/WEB-INF/jsp/services/cargoIns.jsp"></put-attribute>
+		<put-attribute name="title" value="Cargo Insurance"></put-attribute>
+	</definition>
+	
+	
+</tiles-definitions>
