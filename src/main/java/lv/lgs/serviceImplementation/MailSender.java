@@ -16,9 +16,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class MailSender {
 //спробувати зробити щоб лист йшов зі сторінки мені, а не від мене
-    final static String USERNAME = "yuraa_@ukr.net";
-    final static String PASSWORD = "yura8459";
-    final static String EMAILFROM = "yuraa_@ukr.net"; 
+    final static String USERNAME = "****@ukr.net";
+    final static String PASSWORD = "****";
+    final static String EMAILFROM = "****@ukr.net"; 
 
     public synchronized void sendMail(String content, String email, String path) {
         Properties properties = System.getProperties();

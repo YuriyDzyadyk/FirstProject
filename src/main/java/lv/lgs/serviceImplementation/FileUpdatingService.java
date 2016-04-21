@@ -22,8 +22,8 @@ public class FileUpdatingService  {
         if(!f.exists()){
             f.mkdirs();
         }
-        try {//??
-        	//Ќ≈картинки треба п≥двантажувати ≥нпут стр≥мами
+        try {
+        	//??//Ќ≈картинки треба п≥двантажувати ≥нпут стр≥мами
         	//читаЇ картинку
             BufferedImage bi = ImageIO.read(new ByteArrayInputStream(file.getBytes()));  
             //г≥лки на випадок р≥зних формат≥в  
